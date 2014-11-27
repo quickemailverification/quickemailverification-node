@@ -1,0 +1,23 @@
+{
+  "name": "quickemailverification",
+  "version": "0.1.0",
+  "description": "Official QuickEmailVerification API library client for node.js",
+  "author": "quickemailverification <> (http://quickemailverification.com)",
+  "homepage": "http://quickemailverification.com",
+  "keywords": ["quickemailverification", "email verification api", "client", "library", "free", "email", "verify", "validation", "verification","api"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quickemailverification/quickemailverification-node"
+  },
+  "main": "./lib/index.js",
+  "dependencies": {
+    "request": "2.x.x"
+  },
+  "bugs": {
+    "url": "https://github.com/quickemailverification/quickemailverification-node/issues"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">= 0.8.0"
+  }
+}
