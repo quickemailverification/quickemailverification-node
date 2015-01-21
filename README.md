@@ -4,7 +4,7 @@
 </p>
 
 
-# Official QuickEmailVerification API library client for Node.js
+# Official Email Validation API library client for Node.js
 
 QuickEmailVerification provides the quickest way to avoid fake / invalid emails.
 
