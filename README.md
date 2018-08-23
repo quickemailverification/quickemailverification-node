@@ -1,8 +1,7 @@
 <p align="center">
-  <img src="http://quickemailverification.com/extra/images/logo_github.png" alt="Quick Email Verification">
+  <img src="https://quickemailverification.com/extra/images/logo_github.png" alt="Quick Email Verification">
   <br>
 </p>
-
 
 # Official Email Validation API library client for Node.js
 
@@ -14,7 +13,7 @@ QuickEmailVerification provides the quickest way to avoid fake / invalid emails.
 
 ## Let's Get Started
 
-To begin, signUp at [quickemailverification.com](http://quickemailverification.com) and create a FREE account. After signup logged in, click on **[API Settings](http://quickemailverification.com/apisettings)** and then click **Add API Key**. To use API you need 2 parameters.
+To begin, signUp at [quickemailverification.com](https://quickemailverification.com) and create a FREE account. After signup logged in, click on **[API Settings](https://quickemailverification.com/apisettings)** and then click **Add API Key**. To use API you need 2 parameters.
 
 email - (string) This is a email address you need to verify. It should be url encoded.
 apikey - (string) This is the key you generated from "api settings" page.
@@ -38,7 +37,12 @@ Works with [ 0.8 / 0.9 / 0.10 / 0.11 ]
 ```js
 var quickemailverification = require('quickemailverification').client('Your_API_Key_Here').quickemailverification();
 
+// PRODUCTION MODE
 quickemailverification.verify("test@example.com", function (err, response) {
+
+// SANDBOX MODE
+//quickemailverification.sandbox("valid@example.com", function (err, response) {
+
   // Print response object
   console.log(response.body);
 });
@@ -69,6 +73,8 @@ A successful API call responds with the following values:
 - **email** `string` - Returns a normalized version. (`Niki@example.com` -> `niki@example.com`
 - **user** `string` - The local part of an email address. (`niki@example.com` -> `niki`)
 - **domain** `string` - The domain of the provided email address. (`niki@example.com` -> `example.com`)
+- **mx_record** `string` - The preferred MX record of email domain. This field contains empty string when MX record is not available.
+- **mx_domain** `string` - The domain name of the MX host. This field contains empty string when MX record is not available.
 - **safe_to_send** `true | false` - *true* if the email address is safe for deliverability
 - **did_you_mean** `string` - Returns email suggestions if specific typo errors found in email
 - **success** `true | false` - *true* if the API request was successful
@@ -91,6 +97,11 @@ QuickEmailVerification API also returns following HTTP status codes to indicate 
 - `404` - Requested API can not be found on server.
 - `429` - Too many requests. Rate limit exceeded.
 
+## Sandbox Mode
+QuickEmailVerification single email verification API sandbox mode helps developers to test their integration against simulated results. Requesting against sandbox endpoint is totally free and no credits will be deducted from actual credit quota.
+
+Please refer our [knowledge base](http://docs.quickemailverification.com/email-verification-api/sandbox-mode) to learn more about sandbox mode.
+
 ## License
 MIT
 
@@ -98,4 +109,4 @@ MIT
 Report [here](https://github.com/quickemailverification/quickemailverification-node/issues).
 
 ## Need Help? Feel free to contact us
-http://quickemailverification.com/contact-us
+https://quickemailverification.com/contact-us
