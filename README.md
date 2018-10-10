@@ -16,6 +16,7 @@ QuickEmailVerification provides the quickest way to avoid fake / invalid emails.
 To begin, signUp at [quickemailverification.com](https://quickemailverification.com) and create a FREE account. After signup logged in, click on **[API Settings](https://quickemailverification.com/apisettings)** and then click **Add API Key**. To use API you need 2 parameters.
 
 email - (string) This is a email address you need to verify. It should be url encoded.
+
 apikey - (string) This is the key you generated from "api settings" page.
 
 NOTE: Keep API key with you. - you'll need it to setup the client as explained below.
