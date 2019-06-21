@@ -5,6 +5,10 @@
 
 # Official Email Validation API library client for Node.js
 
+[![Build Status](https://travis-ci.org/quickemailverification/quickemailverification-node.svg?branch=master)](https://travis-ci.org/quickemailverification/quickemailverification-node)
+[![npmjs Version](https://img.shields.io/npm/v/quickemailverification.svg)](https://www.npmjs.com/package/quickemailverification)
+[![Total Downloads](https://img.shields.io/npm/dt/quickemailverification.svg)](https://www.npmjs.com/package/quickemailverification)
+
 QuickEmailVerification provides the quickest way to avoid fake / invalid emails.
 
 * Get actual users by scanning email address.
