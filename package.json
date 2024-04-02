@@ -1,6 +1,6 @@
 {
   "name": "quickemailverification",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Official QuickEmailVerification API library client for node.js",
   "author": "quickemailverification <support@quickemailverification.com> (https://quickemailverification.com)",
   "homepage": "https://quickemailverification.com",
